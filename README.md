@@ -1,2 +1,2 @@
-# websitee
+# neocities
 heckifiknow.jpeg
