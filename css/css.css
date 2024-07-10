@@ -12,8 +12,10 @@ body {
     background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(26, 43, 251, 1) 100%);
     background: -moz-linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(26, 43, 251, 1) 100%);
     background: -webkit-linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(26, 43, 251, 1) 100%);
-    cursor: grab;
+    cursor: grabbing;
 }
+
+/* top thingies */
 
 #installshieldtitle {
     margin-top: 0px;
@@ -47,8 +49,8 @@ body {
 
 #content {
     margin-top: 50px;
-    margin-bottom: 50px;
-    width: 85%;
+    margin-bottom: 80px;
+    width: 50%;
     margin-left: auto;
     margin-right: auto;
     height: auto;
@@ -56,29 +58,63 @@ body {
     background-color: #bdbdbd;
 }
 
+/* lastfm thingy */ 
+
+#lastfm-wrapper {
+    width: 250px;
+    margin-top: 50px;
+    margin-left: 50px;
+    float: left;
+}
+
 #listening {
-    width: 150px;
-    height: 150px;
+    /*height: 160px;*/
     margin-left: auto;
     margin-right: auto;
-    display: flex;
-    flex-direction: row;
 }
 
 #trackInfo {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    
+}
+
+#lastfm p, h4  {
+    margin-left: 5px;
+    margin-bottom: 5px;
+    text-align: center;
 }
 
 #trackInfo img {
-    height: 125px;
-    width: 125px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+    height: 150px;
+    width: 150px;
 }
 
+#trackName, #artistName{
+    margin-left: 5px;
+}
+
+/* test */
+
+#test {
+    width: 250px;
+    margin-top: 370px;
+    margin-left: -250px;
+    float: left;
+}
+
+/* other thingies */
 
 #active-window {
     background-color: #bdbdbd;
+}
+
+.window-body {
+    margin: 0 !important;
 }
 
 #list-container {
@@ -88,6 +124,10 @@ body {
 
 #construction {
     padding: 50px;
+}
+
+main {
+    margin-bottom: 250px; /* firefox, why */
 }
 
 a:link,
@@ -184,26 +224,4 @@ a:hover {
     #content img {
         size: 50px;
     }
-
-    #project {
-        width: auto;
-        margin-bottom: 10px;
-        background-color: #00ffe809;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-
-    #project h2 {
-        font-size: large;
-    }
-
-    #project img {
-        width: 250px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        border: 10px ridge #bdbdbd;
-    }
-
 }
