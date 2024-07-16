@@ -9,30 +9,33 @@ document.addEventListener("keydown", (event) => {
 
 window.addEventListener("DOMContentLoaded", (event) => {
     //A+ coding right here
+    //okay, srsly dit kan beter lmao
     const changeStateTitleBarTop = document.querySelector("main");
     const changeStateTitleBarMain = document.querySelector("#installshield-bigtext");
+    const changeStateTitleBarNav = document.querySelector("#nav");
     const closeButton = document.querySelector("#close-button");
-    const helpButton = document.querySelector("#help-button");;
 
     changeStateTitleBarTop.addEventListener("click", () => {
-        console.log("flip");
         document.getElementById("top-title-bar").className = "title-bar inactive";
+        document.getElementById("nav-title-bar").className = "title-bar inactive";
         document.getElementById("content-title-bar").className = "title-bar";
     });
 
     changeStateTitleBarMain.addEventListener("click", () => {
-        console.log("flipped again");
         document.getElementById("top-title-bar").className = "title-bar";
+        document.getElementById("nav-title-bar").className = "title-bar inactive";
+        document.getElementById("content-title-bar").className = "title-bar inactive";
+    });
+
+    changeStateTitleBarNav.addEventListener("click", () => {
+        document.getElementById("nav-title-bar").className = "title-bar";
+        document.getElementById("top-title-bar").className = "title-bar inactive";
         document.getElementById("content-title-bar").className = "title-bar inactive";
     });
 
     closeButton.addEventListener("click", () => {
-        console.log("yo");
+        console.log("click");
         window.location = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"; //ayo replit auto suggest???
-    });
-
-    helpButton.addEventListener("click", () => {
-        alert("not available at the moment");
     });
 })
 
