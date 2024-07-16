@@ -12,7 +12,7 @@ body {
     background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(26, 43, 251, 1) 100%);
     background: -moz-linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(26, 43, 251, 1) 100%);
     background: -webkit-linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(26, 43, 251, 1) 100%);
-    cursor: grabbing;
+    cursor: progress;
 }
 
 /* top thingies */
@@ -62,8 +62,8 @@ body {
 
 #lastfm-wrapper {
     width: 250px;
-    margin-top: 50px;
-    margin-left: 50px;
+    margin-top: 190px;
+    margin-left: -250px;
     float: left;
 }
 
@@ -100,11 +100,20 @@ body {
 
 /* test */
 
-#test {
+#nav {
     width: 250px;
-    margin-top: 370px;
-    margin-left: -250px;
+    margin-top: 50px;
+    margin-left: 50px;
     float: left;
+}
+
+#navi {
+    margin-left: 25px;
+    font-size: medium;
+}
+
+li {
+    list-style-type: '\269D  ';
 }
 
 /* other thingies */
@@ -208,20 +217,4 @@ a:hover {
     z-index: 2;
     pointer-events: none;
     animation: flicker 0.15s infinite;
-}
-
-
-@media screen and (max-width: 600px) {
-
-    #content {
-        margin-top: 50px;
-        width: 80%;
-        margin-left: 50px;
-        height: auto;
-        background-color: #bdbdbd;
-    }
-
-    #content img {
-        size: 50px;
-    }
 }
