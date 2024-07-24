@@ -113,6 +113,7 @@ h4 {
 li {
     list-style-type: '\269D  ';
     color: white;
+    z-index: 1;
 }
 
 #middle {
@@ -123,13 +124,48 @@ li {
     margin-right: auto;
     height: 300px;
     text-align: center;
-    background-color: #bdbdbd;
+}
+
+#codec-bar {
+    width: 90%;
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+#codec-controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    border-top: #318175 solid 3px;
+}
+
+#codec-controls-left {
+    width: 50%;
+    color: #318175;
+    
+}
+
+#codec-controls-right {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    color: #318175;
+}
+
+#mem {
+    text-align: left;
+    margin-left: 50px;
+}
+
+#right {
+    margin-right: 50px;
 }
 
 /* other thingies */
 
 #construction {
-    padding: 50px;
+    text-align: center;
 }
 
 /*main {
@@ -144,13 +180,13 @@ a:visited {
 
 a:link:active,
 a:visited:active {
-    color: #000099;
+    color: #7dc8b2;
     text-decoration: none;
 }
 
 a:hover {
     cursor: url(../img/winpointer.png), pointer;
-    color: #660099;
+    color: #7dc8b2;
 }
 
 .crt::before {
