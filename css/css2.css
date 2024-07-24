@@ -35,6 +35,7 @@ body {
     margin-right: auto;
     flex-direction: row;
     border: #318175 solid 3px;
+    color: white;
 }
 
 /* lastfm thingy */
@@ -55,6 +56,7 @@ body {
 #lastfm-status {
     margin-left: 5px;
     margin-bottom: 5px;
+    color: white;
 }
 
 #listening {
@@ -73,6 +75,7 @@ h4 {
     margin-left: 5px;
     margin-bottom: 5px;
     text-align: center;
+    color: white;
 }
 
 #trackInfo img {
@@ -109,6 +112,7 @@ h4 {
 
 li {
     list-style-type: '\269D  ';
+    color: white;
 }
 
 #middle {
@@ -128,14 +132,13 @@ li {
     padding: 50px;
 }
 
-main {
+/*main {
     margin-bottom: 250px;
-    /* firefox, why */
-}
+}*/
 
 a:link,
 a:visited {
-    color: #0066ff;
+    color: white;
     text-decoration: dotted underline;
 }
 
