@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
-/* uhhhhh idek */
+/* ¯\_(´・ω・｀)_/¯ */
 
 * {
     margin: 0;
@@ -10,19 +10,20 @@
 }
 
 body {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgb(26, 26, 26) 100%);
+    background: #141414;
 }
 
 /* container */
 
-#top-container {
+#codec-container {
     margin-top: 150px;
     display: flex;
     width: 75%;
+    height: 300px;
     margin-left: auto;
     margin-right: auto;
     flex-direction: row;
-    border: #00ffd5 solid 3px;
+    border: #318175 solid 3px;
 }
 
 #bottom-container {
@@ -33,15 +34,27 @@ body {
     margin-left: auto;
     margin-right: auto;
     flex-direction: row;
-    border: #00ffd5 solid 3px;
+    border: #318175 solid 3px;
 }
 
 /* lastfm thingy */
 #lastfm-wrapper {
     margin-right: auto;
     margin-left: auto;
+    background-color: #2a716696;
     width: 250px;
-    height: 300px;
+    height: 350px;
+    margin-top: -25px;
+    z-index: -1;
+}
+
+#lastfm {
+    margin-top: 50px;
+}
+
+#lastfm-status {
+    margin-left: 5px;
+    margin-bottom: 5px;
 }
 
 #listening {
@@ -81,12 +94,16 @@ h4 {
 #nav {
     margin-left: auto;
     margin-right: auto;
+    background-color: #2a716696;
     width: 250px;
-    height: 300px;
+    height: 350px;
+    margin-top: -25px;
+    z-index: -1;
 }
 
 #navi {
-    margin-left: 25px;
+    margin-left: 35px;
+    margin-top: 50px;
     font-size: medium;
 }
 
@@ -95,8 +112,8 @@ li {
 }
 
 #middle {
-    border-left:#00ffd5 solid 3px;
-    border-right: #00ffd5 solid 3px;
+    border-left: #318175 solid 3px;
+    border-right: #318175 solid 3px;
     width: 45%;
     margin-left: auto;
     margin-right: auto;
