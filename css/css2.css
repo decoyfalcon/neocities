@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+/* uhhhhh idek */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Source Code Pro", monospace;
+    font-style: normal;
+    cursor: url(../img/windefault.png), auto;
+}
+
+body {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgb(26, 26, 26) 100%);
+}
+
+/* container */
+
+#top-container {
+    margin-top: 150px;
+    display: flex;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: row;
+    border: #00ffd5 solid 3px;
+}
+
+#bottom-container {
+    margin-top: 50px;
+    display: flex;
+    width: 75%;
+    height: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: row;
+    border: #00ffd5 solid 3px;
+}
+
+/* lastfm thingy */
+#lastfm-wrapper {
+    margin-right: auto;
+    margin-left: auto;
+    width: 250px;
+    height: 300px;
+}
+
+#listening {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#trackInfo {
+    display: flex;
+    flex-direction: column;
+
+}
+
+#lastfm p,
+h4 {
+    margin-left: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+#trackInfo img {
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+    height: 150px;
+    width: 150px;
+}
+
+#trackName,
+#artistName {
+    margin-left: 5px;
+}
+
+/* nav */
+
+#nav {
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+    height: 300px;
+}
+
+#navi {
+    margin-left: 25px;
+    font-size: medium;
+}
+
+li {
+    list-style-type: '\269D  ';
+}
+
+#middle {
+    border-left:#00ffd5 solid 3px;
+    border-right: #00ffd5 solid 3px;
+    width: 45%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 300px;
+    text-align: center;
+    background-color: #bdbdbd;
+}
+
+/* other thingies */
+
+#construction {
+    padding: 50px;
+}
+
+main {
+    margin-bottom: 250px;
+    /* firefox, why */
+}
+
+a:link,
+a:visited {
+    color: #0066ff;
+    text-decoration: dotted underline;
+}
+
+a:link:active,
+a:visited:active {
+    color: #000099;
+    text-decoration: none;
+}
+
+a:hover {
+    cursor: url(../img/winpointer.png), pointer;
+    color: #660099;
+}
+
+.crt::before {
+    content: " ";
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+    z-index: 2;
+    background-size: 100% 2px, 3px 100%;
+    pointer-events: none;
+}
+
+@keyframes flicker {
+    0% {
+        opacity: 0.27861;
+    }
+
+    5% {
+        opacity: 0.34769;
+    }
+
+    10% {
+        opacity: 0.23604;
+    }
+
+    15% {
+        opacity: 0.10626;
+    }
+
+    20% {
+        opacity: 0.18128;
+    }
+
+    25% {
+        opacity: 0.10626;
+    }
+
+    30% {
+        opacity: 0.18128;
+    }
+
+    35% {
+        opacity: 0.23604;
+    }
+}
+
+.crt::after {
+    content: " ";
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(18, 16, 16, 0.1);
+    opacity: 0;
+    z-index: 2;
+    pointer-events: none;
+    animation: flicker 0.15s infinite;
+}
