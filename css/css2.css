@@ -13,7 +13,7 @@ body {
     background: #141414;
 }
 
-/* container */
+/* containers */
 
 #codec-container {
     margin-top: 150px;
@@ -126,6 +126,8 @@ li {
     text-align: center;
 }
 
+/* rest of codec */
+
 #codec-bar {
     width: 70%;
     margin-left: auto;
@@ -173,16 +175,44 @@ li {
     margin-right: 50px;
 }
 
-/* other thingies */
-
 #codec-call {
     color: white;
+    margin-top: 50px;
     text-align: center;
 }
 
-/*main {
-    margin-bottom: 250px;
-}*/
+#codec-numbers {
+    display: flex;
+    color: #7dc8b2;
+    border-bottom: #26635a solid 3px;
+}
+
+#codec-numbers a {
+    color: #26635a;
+    text-decoration: none;
+}
+
+#codec-numbers a:hover {
+    color: white;
+}
+
+#codec-num {
+    display: flex;
+    margin-left: 50px;
+    font-size: xx-large;
+    
+}
+
+#codec-num-txt {
+    margin-left: 20px;
+    font-size: xx-large;
+}
+
+#codec-num-alt {
+    display: flex;
+    margin-left: 90px;
+    font-size: xx-large;
+}
 
 a:link,
 a:visited {
