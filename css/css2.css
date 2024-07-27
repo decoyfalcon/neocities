@@ -10,7 +10,7 @@
 }
 
 body {
-    background: #141414;
+    background: #0b0f0e;
 }
 
 /* containers */
@@ -39,6 +39,7 @@ body {
 }
 
 /* lastfm thingy */
+
 #lastfm-wrapper {
     margin-right: auto;
     margin-left: auto;
@@ -54,7 +55,7 @@ body {
 }
 
 #lastfm-status {
-    margin-left: 5px;
+    margin-left: 15px;
     margin-bottom: 5px;
     color: white;
 }
@@ -229,69 +230,6 @@ a:visited:active {
 a:hover {
     cursor: url(../img/winpointer.png), pointer;
     color: #7dc8b2;
-}
-
-.crt::before {
-    content: " ";
-    display: block;
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
-    z-index: 2;
-    background-size: 100% 2px, 3px 100%;
-    pointer-events: none;
-}
-
-@keyframes flicker {
-    0% {
-        opacity: 0.27861;
-    }
-
-    5% {
-        opacity: 0.34769;
-    }
-
-    10% {
-        opacity: 0.23604;
-    }
-
-    15% {
-        opacity: 0.10626;
-    }
-
-    20% {
-        opacity: 0.18128;
-    }
-
-    25% {
-        opacity: 0.10626;
-    }
-
-    30% {
-        opacity: 0.18128;
-    }
-
-    35% {
-        opacity: 0.23604;
-    }
-}
-
-.crt::after {
-    content: " ";
-    display: block;
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background: rgba(18, 16, 16, 0.1);
-    opacity: 0;
-    z-index: 2;
-    pointer-events: none;
-    animation: flicker 0.15s infinite;
 }
 
 @media screen and (max-width: 1500px) {
