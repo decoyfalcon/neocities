@@ -182,6 +182,11 @@ li {
     text-align: center;
 }
 
+#codec-call2 {
+    color: white;
+    margin-top: 50px;
+}
+
 #codec-numbers {
     display: flex;
     color: #7dc8b2;

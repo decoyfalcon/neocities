@@ -156,6 +156,58 @@ a:hover {
     color: #660099;
 }
 
+@media screen and (max-width: 400px) {
+
+    
+    #content {
+        margin-top: 50px;
+        margin-bottom: 80px;
+        width: 50vw;
+        margin-left: auto;
+        margin-right: auto;
+        height: auto;
+        text-align: center;
+        background-color: #bdbdbd;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+
+    #lastfm-wrapper {
+    width: 175px;
+    margin-top: 190px;
+    margin-left: -175px;
+    float: left;
+    }
+
+    #nav {
+        width: 175px;
+        margin-top: 50px;
+        margin-left: 5px;
+        float: left;
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+
+    #lastfm-wrapper {
+    width: 175px;
+    margin-top: 190px;
+    margin-left: -175px;
+    float: left;
+    }
+
+    #nav {
+        width: 175px;
+        margin-top: 50px;
+        margin-left: 5px;
+        float: left;
+    }
+
+}
+
 .crt::before {
     content: " ";
     display: block;
